@@ -3,14 +3,72 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <header
-    class="relative w-full bg-cover bg-center h-[100vh]"
-    style="background-image: url('/header-bg.jpg');"
-  >
-    <div class="absolute inset-0 flex flex-col items-center justify-end text-white gap-2 pb-32">
-      <img src="/white-logo.png" alt="Korner Logo" class="w-48" />
-      <h1 class="italic text-8xl">KORNER</h1>
-      <h2 class="italic text-4xl uppercase">Donde los cracks se reúnen</h2>
+  <header class="relative w-full min-h-[80vh] overflow-hidden">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/header-bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div
+      class="absolute inset-0 flex flex-col items-center justify-end text-white gap-2 pb-32 px-4 md:px-0 text-center"
+    >
+      <img src="/img/white-logo.png" alt="Korner Logo" class="w-24 md:w-32" />
+      <h1 class="italic text-4xl md:text-6xl">KORNER</h1>
+      <h2 class="italic text-xl md:text-2xl uppercase">
+        Donde los cracks se reúnen
+      </h2>
+      <a
+        href="/"
+        class="btn btn-primary bg-primary min-w-[200px] text-center text-black rounded-[64px] py-2 hover:text-white hover:bg-transparent transition-all duration-300 ease-in-out border-primary hover:border-white border-solid border-2"
+        >Descargar ahora</a
+      >
     </div>
   </header>
+  <div class="big-divider w-full flex">
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-primary"></div>
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-black"></div>
+  </div>
+  <section>
+    <div class="container mx-auto py-8 relative px-4 md:px-0">
+      <div class="md:flex items-center">
+        <div class="w-full md:w-1/2 md:hidden">
+          <img
+            src="/img/phone-1.png"
+            alt="Korner App"
+            class="w-[100%] max-w-none rounded-lg"
+          />
+        </div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-4xl font-bold">KORNER</h2>
+          <h3 class="text-2xl">Consectetur adipiscing elit.</h3>
+          <div class="divider flex w-[100px] my-8">
+            <div class="w-1/2 border-gray-300 h-2 bg-primary"></div>
+            <div class="w-1/2 border-gray-300 h-2 bg-black"></div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien. In hac habitasse platea dictumst. Maecenas sed
+            nulla justo.
+          </p>
+        </div>
+        <div class="md:w-1/2 hidden md:block">
+          <img
+            src="/img/phone-1.png"
+            alt="Korner App"
+            class="w-[100%] max-w-none rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="big-divider w-full flex">
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-primary"></div>
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-black"></div>
+  </div>
 </BaseLayout>

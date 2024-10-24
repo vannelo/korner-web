@@ -10,15 +10,52 @@
     </div>
     <ul class="menu flex space-x-6 text-white">
       <li>
-        <a href="/" class="hover:text-primary transition-colors">Nosotros</a>
-      </li>
-      <li>
-        <a href="/about" class="hover:text-primary transition-colors"
-          >Contacto</a
+        <a
+          href="/contact"
+          class="bg-primary py-2 px-8 rounded-[64px] text-black transition-colors"
+          >Descargar</a
         >
       </li>
+    </ul>
+  </div>
+</nav>
+<nav
+  class="nav-mobile md:hidden navbar fixed top-0 left-0 right-0 w-full py-4 px-4 bg-transparent z-10 text-white transition-colors duration-300"
+  id="mobile-navbar"
+>
+  <div class="container mx-auto flex items-center justify-between">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/white-logo.png" alt="Korner Logo" class="w-8" />
+      </a>
+    </div>
+    <button
+      class="hamburger"
+      aria-label="Abrir menú"
+      onclick="document.getElementById('menu').classList.toggle('hidden')"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="w-full text-center py-4 hidden" id="menu">
+    <ul class="menu flex flex-col space-y-4 text-white">
       <li>
-        <a href="/contact" class="hover:text-primary transition-colors"
+        <a
+          href="/contact"
+          class="bg-primary
+        py-2 px-8 rounded-[64px] text-black transition-colors"
           >Descargar</a
         >
       </li>
@@ -29,6 +66,7 @@
 <script>
   window.addEventListener("scroll", () => {
     const navbar = document.getElementById("navbar");
+    const mobileNavbar = document.getElementById("mobile-navbar");
     if (navbar) {
       if (window.scrollY > 100) {
         navbar.classList.add("bg-black");
@@ -36,6 +74,15 @@
       } else {
         navbar.classList.add("bg-transparent");
         navbar.classList.remove("bg-black");
+      }
+    }
+    if (mobileNavbar) {
+      if (window.scrollY > 100) {
+        mobileNavbar.classList.add("bg-black");
+        mobileNavbar.classList.remove("bg-transparent");
+      } else {
+        mobileNavbar.classList.add("bg-transparent");
+        mobileNavbar.classList.remove("bg-black");
       }
     }
   });

@@ -14,6 +14,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <source src="/header-bg.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+    <div class="absolute inset-0 bg-primary mix-blend-multiply"></div>
     <div
       class="absolute inset-0 flex flex-col items-center justify-end text-white gap-2 pb-32 px-4 md:px-0 text-center"
     >
@@ -70,5 +71,111 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <div class="big-divider w-full flex">
     <div class="w-1/2 mx-auto border-gray-300 h-4 bg-primary"></div>
     <div class="w-1/2 mx-auto border-gray-300 h-4 bg-black"></div>
+  </div>
+  <section class="bg-black py-16">
+    <div class="container mx-auto py-8 relative px-4 md:px-0">
+      <div class="text-center">
+        <h2 class="text-4xl text-white">LOREM IPSUM</h2>
+        <div class="divider flex w-[100px] my-8 mx-auto">
+          <div class="w-1/2 border-gray-300 h-2 bg-primary"></div>
+          <div class="w-1/2 border-gray-300 h-2 bg-white"></div>
+        </div>
+      </div>
+      <div
+        class="services grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 justify-center items-center"
+      >
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+        <div class="service bg-white text-black text-center p-4 rounded-lg">
+          <img src="/img/phone-1.png" alt="Korner App" class="w-64 mx-auto" />
+          <h3 class="text-2xl">LOREM IPSUM</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit
+            amet erat quam. Curabitur magna neque, euismod in tellus eu, commodo
+            fermentum sapien.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="bg-primary text-white py-40 bg-right md:bg-top"
+    style="background-image: url('/img/banner.jpg'); background-size: cover; background-repeat: no-repeat"
+  >
+    <div class="container mx-auto py-8 relative px-4 md:px-0">
+      <div class="md:flex items-center justify-center">
+        <div class="md:w-1/2 text-center">
+          <h2 class="text-4xl bg-primary text-black inline-block px-4 py-2">
+            Descarga la app
+          </h2>
+          <h3 class="text-2xl">
+            Y únete a la comunidad de jugadores más grande de Latinoamérica.
+          </h3>
+          <div class="flex justify-center items-center my-4 gap-4">
+            <a href="/" class="btn btn-primary text-primary"
+              ><img
+                src="/img/app-store.svg"
+                alt="Descarga Korner en iOS"
+                class="w-[160px]"
+              /></a
+            >
+            <a href="/" class="btn btn-primary text-primary"
+              ><img
+                src="/img/google-store.svg"
+                alt="Descarga Korner en Android"
+                class="w-[160px]"
+              /></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="big-divider w-full flex">
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-primary"></div>
+    <div class="w-1/2 mx-auto border-gray-300 h-4 bg-white"></div>
   </div>
 </BaseLayout>
